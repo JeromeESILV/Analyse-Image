@@ -1,0 +1,44 @@
+----------------------------------------------------------------------------
+I. Installation de la librairie d'imagerie PIL/Pillow :
+
+1. Ouvrir (run) un shell Windows en ligne de commande (cmd) > C:\  , lancer la commande : py -m pip install Pillow
+
+ . Ou sinon si ça ne marche pas, en invite de ligne de commande taper : > C:\ cd C:\Users\ga\AppData\Local\Programs\Python\Python38-32
+   si le répertoire d'installation de l'exécutable python.exe est : C:\Users\ga\AppData\Local\Programs\Python\Python38-32) 
+ . Lancer l'executable pyton.exe pour installer la librairie PIL par la commande : python -m pip install Pillow
+ . Ou sinon si ça ne marche pas, Taper le code suivant : pip install Pillow     (pip est installé en même temps que Python)
+----------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+II. Installation de la librairie numpy pour la gestion des tableaux : Dans un shell Windows, lancer la commande : py -m pip install numpy
+----------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+III. Appel de quelques librairies dans un programme script python :
+
+from PIL import Image  			# librairie image PIL/Pillow (install par shell cmd : py -m pip install Pillow) (ou : python -m pip install Pillow)
+from PIL import	Image, ImageFilter	# import librairie PIL/Pillow de traitement d'image avec filtres
+import PIL.ImageOps  			# import librairie image PIL/Pillow
+
+from math import *   			# import librairie maths all functions
+from math import sqrt			# import librairie maths sqrt function
+
+from numpy import *  			# librairie numpy de tableaux (install par shell cmd : py -m pip install numpy)
+import numpy as np  			# librairie numpy de tableaux (install par shell cmd : py -m pip install numpy)
+
+from scipy import signal  		# librairie scipy de signal (install par shell cmd : py -m pip install scipy)
+from scipy import misc
+
+import matplotlib.pyplot as plt  	# librairie matplotlib de maths (install par shell cmd : py -m pip install matplotlib)
+
+from skyimage import data
+from skyimage.feature import blob_dog, blob_log, blob_doh
+from skyimage.color import rgb2gray
+import glob
+from skyimage.io import imread
+----------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+IV. Liste des fonctions de PIL : taper help() dans l'interpeteur de commandes Python, puis PIL dans la boite de dialogue generee
+----------------------------------------------------------------------------
+
